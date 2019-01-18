@@ -1,0 +1,53 @@
+.wrap{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.box{
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+    position: absolute;
+}
+
+.box1{
+    top:0;
+    left: 50px;
+    animation: upDown 1.6s infinite alternate;
+}
+.box2{
+    top:0;
+    left: 100px;
+    animation: upDown 2s infinite alternate;
+}
+.box3{
+    top:0;
+    left: 150px;
+    animation: upDown 2.2s infinite alternate;
+}
+.box4{
+    top:0;
+    left: 200px;
+    animation: upDown 1.5s infinite alternate;
+}
+.box5{
+    top:0;
+    left: 250px;
+    animation: upDown 4s infinite alternate;
+}
+.box6{
+    top:0;
+    left: 300px;
+    animation: upDown 4s infinite alternate;
+}
+
+
+@keyframes upDown{
+    from{
+        top:0px;
+    }
+    to{
+        top:100px;
+    }
+}
