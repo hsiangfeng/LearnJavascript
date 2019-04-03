@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>時間取得</title>
+</head>
+<body>
+  <input type="date" name="" id="date">
+  <input type="button" value="送出" id="btn">
+
+  <script>
+  const data = document.getElementById('date');
+  const btn = document.getElementById('btn');
+
+  btn.addEventListener('click', function(){
+    console.log(data.value);
+    const now = new Date(data.value);
+    const startTime = now.setHours(0, 0, 0, 0); // 轉換成timestamp
+    console.log(startTime);
+    const endTime = now.setHours(23,59,59,0);
+    console.log(endTime);
+  })
+  </script>
+</body>
+</html>
